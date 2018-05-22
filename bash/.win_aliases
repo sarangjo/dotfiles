@@ -1,0 +1,12 @@
+alias au17="cd ~/OneDrive\ -\ UW\ Office\ 365/Documents/Senior\ Year/au17"
+alias wi18="cd ~/OneDrive\ -\ UW\ Office\ 365/Documents/Senior\ Year/wi18"
+alias sp18="cd ~/OneDrive\ -\ UW\ Office\ 365/Documents/Senior\ Year/sp18"
+alias onedrive="cd ~/OneDrive/Documents"
+
+export DISPLAY=:0
+
+alias pycharm_linux="~/Downloads/Linux\ Applications/pycharm-community-2017.3.4/bin/pycharm.sh"
+alias phpe="php.exe -S localhost:3001"
+
+alias wpython="winpty /c/Python36-32/python"
+alias wpython2="winpty /c/Python27/python"

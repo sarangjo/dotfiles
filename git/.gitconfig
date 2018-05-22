@@ -1,0 +1,14 @@
+[user]
+	email = sarangj@msn.com
+	name = Sarang Joshi
+[core]
+	autocrlf = input
+	editor = vim
+	safecrlf = false
+[push]
+	default = simple
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
