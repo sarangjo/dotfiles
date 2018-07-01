@@ -32,3 +32,4 @@ export KINSPIRE="kavmag1@durin.dreamhost.com"
 
 # added by Miniconda3 installer
 export PATH="/mnt/c/Users/saran/conda3/bin:$PATH"
+export ATOMSYNC="a259edee1b2377289d899cf03c8ae9c02730a534"
