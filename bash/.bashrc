@@ -5,7 +5,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# General aliases 
+# General aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -21,12 +21,15 @@ if [ -f ~/.atturc ]; then
 fi
 
 # just in case the system does not have vim as the default editor
-export EDITOR=vim 
+export EDITOR=vim
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-export PS1="[\u@\h \[\033[32m\]\W\[\033[33m\]]\$(parse_git_branch)\[\033[00m\] $ "
+# \e is needed for escape sequence
+# [32m is green, [33m is yellow, [0m is white
+# \u is user, \h is host, \W is working directory
+export PS1="\e[33m[\e[0m\u@\h \e[32m\W\e[33m]\$(parse_git_branch)\e[0m $ "
 export ATTU="sarangj@attu.cs.washington.edu"
 export KINSPIRE="kavmag1@durin.dreamhost.com"
 
