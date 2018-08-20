@@ -1,3 +1,11 @@
+[alias]
+	s = status
+	c = commit -m
+	ac = commit -am
+	a = add -A
+	d = diff
+	ps = push
+	pl = pull
 [user]
 	email = sarangj@msn.com
 	name = Sarang Joshi

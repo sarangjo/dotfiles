@@ -41,14 +41,7 @@ alias q++="g++ -Wall -std=c++11 -g -o"
 
 # Git
 alias g="git"
-alias gits="git status"
-alias gitc="git commit -m"
-alias gitac="git commit -am"
-alias gita="git add -A"
-alias gitd="git diff"
 alias gith="cd ~/git" # Git home
-alias gitps="git push"
-alias gitpl="git pull"
 alias gitfr="git fetch upstream && git rebase upstream/master"
 
 # Kinspire

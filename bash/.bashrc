@@ -29,7 +29,7 @@ parse_git_branch() {
 # \e is needed for escape sequence
 # [32m is green, [33m is yellow, [0m is white
 # \u is user, \h is host, \W is working directory
-export PS1="\e[33m[\e[0m\u@\h \e[32m\W\e[33m]\$(parse_git_branch)\e[0m $ "
+export PS1="[\u@\h \W]\$(parse_git_branch) $ "
 export ATTU="sarangj@attu.cs.washington.edu"
 export KINSPIRE="kavmag1@durin.dreamhost.com"
 
