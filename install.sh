@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cp bash/.* ~
-cp vim/.* ~
-cp tmux/.* ~
-cp git/.* ~
+cp bash/.* ~ &> /dev/null
+cp vim/.* ~ &> /dev/null
+cp tmux/.* ~ &> /dev/null
+cp git/.* ~ &> /dev/null
