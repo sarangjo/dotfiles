@@ -12,6 +12,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'mileszs/ack.vim'
+"Plugin 'rakr/vim-one'
 "Plugin 'jceb/vim-orgmode'
 "Plugin 'vim-airline/vim-airline'
 "Plugin 'FredKSchott/CoVim'
@@ -19,7 +20,7 @@ Plugin 'mileszs/ack.vim'
 " Language support
 Plugin 'rust-lang/rust.vim'
 Plugin 'plasticboy/vim-markdown'
-"Plugin 'c.vim'
+Plugin 'c.vim'
 "Plugin 'python-mode/python-mode'
 call vundle#end()
 filetype plugin indent on
@@ -76,7 +77,7 @@ set ignorecase
 " Turn off highlight after search
 nnoremap <C-h> :noh<CR>
 
-" Close buffer without closing split TODO: replace bd with bn?
+" Close buffer without closing split
 nnoremap <C-x> :bn\|bd #<CR>
 
 " Color scheme
