@@ -6,6 +6,7 @@
 	d = diff
 	ps = push
 	pl = pull
+    co = checkout
 [user]
 	email = sarangj@msn.com
 	name = Sarang Joshi

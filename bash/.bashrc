@@ -20,6 +20,11 @@ if [ -f ~/.atturc ]; then
     . ~/.atturc
 fi
 
+# Work aliases
+if [ -f ~/.illumio_aliases ]; then
+    . ~/.illumio_aliases
+fi
+
 # just in case the system does not have vim as the default editor
 export EDITOR=vim
 

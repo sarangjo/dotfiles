@@ -12,8 +12,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'jceb/vim-orgmode'
 "Plugin 'rakr/vim-one'
-"Plugin 'jceb/vim-orgmode'
 "Plugin 'vim-airline/vim-airline'
 "Plugin 'FredKSchott/CoVim'
 
@@ -40,13 +40,16 @@ au vimenter * if !argc() | NERDTree | endif
 " If when entering a buf (triggered when a buffer is closed) there is only 1
 " window open, and it is the NERDTree, and it is the tabbed tree, then quit
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Ctrl-| finds the file in the NERDTree
+nnoremap <C-y> :NERDTreeFind<CR>
+nnoremap <C-\> :NERDTreeFind<CR>
 
 " The Silver Searcher (using ack.vim)
 if executable('ag')
     " Override ack.vim's default program (hence 'prg') with ag
     let g:ackprg = 'ag --vimgrep --smart-case'
 
-    nnoremap \ :Ack<SPACE>
+    nnoremap \ :Ack!<SPACE>
 endif
 
 " END PLUGINS "
