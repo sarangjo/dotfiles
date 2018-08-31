@@ -42,7 +42,7 @@ au vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Ctrl-| finds the file in the NERDTree
 nnoremap <C-y> :NERDTreeFind<CR>
-nnoremap <C-\> :NERDTreeFind<CR>
+nnoremap <C-\> :NERDTreeToggle<CR>
 
 " The Silver Searcher (using ack.vim)
 if executable('ag')
@@ -51,6 +51,10 @@ if executable('ag')
 
     nnoremap \ :Ack!<SPACE>
 endif
+
+" MiniBufExpl
+nnoremap gl :MBEbn<CR>
+nnoremap gh :MBEbp<CR>
 
 " END PLUGINS "
 
