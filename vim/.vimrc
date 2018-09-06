@@ -85,7 +85,7 @@ set ignorecase
 nnoremap <C-h> :noh<CR>
 
 " Close buffer without closing split
-nnoremap <C-x> :bn\|bd #<CR>
+nnoremap <C-x> :MBEbn\|bd #<CR>
 
 " Color scheme
 color desert
