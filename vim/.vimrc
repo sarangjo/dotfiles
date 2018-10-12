@@ -12,6 +12,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'mileszs/ack.vim'
+"Plugin 'tpope/vim-sleuth'
 "Plugin 'jceb/vim-orgmode'
 "Plugin 'rakr/vim-one'
 "Plugin 'vim-airline/vim-airline'
@@ -21,6 +22,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'c.vim'
+Plugin 'PProvost/vim-ps1'
 "Plugin 'python-mode/python-mode'
 call vundle#end()
 filetype plugin indent on
@@ -43,6 +45,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Ctrl-| finds the file in the NERDTree
 nnoremap <C-y> :NERDTreeFind<CR>
 nnoremap <C-\> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 
 " The Silver Searcher (using ack.vim)
 if executable('ag')
@@ -85,7 +88,10 @@ set ignorecase
 nnoremap <C-h> :noh<CR>
 
 " Close buffer without closing split
-nnoremap <C-x> :MBEbn\|bd #<CR>
+nnoremap <C-x> :bn\|bd #<CR>
+
+" Set tab width in one go
+command! -nargs=1 Stab set sw=<args> sts=<args> ts=<args>
 
 " Color scheme
 color desert

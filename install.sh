@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 cp bash/.* ~ &> /dev/null
 cp vim/.* ~ &> /dev/null
