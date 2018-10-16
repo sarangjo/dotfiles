@@ -2,6 +2,7 @@
 alias cleantemp="rm *~ .*.swp"
 alias lmao="exit"
 alias gr="grep -Rni"
+alias ll="ls -l"
 alias la="ls -lA"
 alias find="find . -name"
 
@@ -31,6 +32,14 @@ function attu {
     else
         host="sarangj@attu$1.cs.washington.edu"
         ssh $host
+    fi
+}
+
+function cl {
+    if [ "$#" -eq 1 ]; then
+        cd $1 && ls
+    else
+        echo "Provide a directory to navigate to."
     fi
 }
 
