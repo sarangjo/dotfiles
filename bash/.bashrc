@@ -37,6 +37,3 @@ parse_git_branch() {
 export PS1="[\u@\h \W]\$(parse_git_branch) $ "
 export ATTU="sarangj@attu.cs.washington.edu"
 export KINSPIRE="kavmag1@durin.dreamhost.com"
-
-# added by Miniconda3 installer
-export PATH="/mnt/c/Users/saran/conda3/bin:$PATH"

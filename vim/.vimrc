@@ -23,6 +23,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'c.vim'
 Plugin 'PProvost/vim-ps1'
+Plugin 'leafgarland/typescript-vim'
 "Plugin 'python-mode/python-mode'
 call vundle#end()
 filetype plugin indent on
