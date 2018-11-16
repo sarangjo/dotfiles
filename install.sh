@@ -4,3 +4,5 @@ cp bash/.* ~ &> /dev/null
 cp vim/.* ~ &> /dev/null
 cp tmux/.* ~ &> /dev/null
 cp git/.* ~ &> /dev/null
+
+exit 0
