@@ -11,13 +11,13 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 # Windows specific aliases and functions
-if [ -f ~/.win_aliases ]; then
-    . ~/.win_aliases
+if [ -f ~/.winrc ]; then
+    . ~/.winrc
 fi
 
-# Attu specific global definitions
-if [ -f ~/.atturc ]; then
-    . ~/.atturc
+# Linux specific global definitions
+if [ -f ~/.nixrc ]; then
+    . ~/.nixrc
 fi
 
 # Work aliases
@@ -35,5 +35,3 @@ parse_git_branch() {
 # [32m is green, [33m is yellow, [0m is white
 # \u is user, \h is host, \W is working directory
 export PS1="[\u@\h \W]\$(parse_git_branch) $ "
-export ATTU="sarangj@attu.cs.washington.edu"
-export KINSPIRE="kavmag1@durin.dreamhost.com"

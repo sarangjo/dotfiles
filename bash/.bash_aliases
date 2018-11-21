@@ -53,9 +53,6 @@ alias g="git"
 alias gith="cd ~/git" # Git home
 alias gitfr="git fetch upstream && git rebase upstream/master"
 
-# Kinspire
-alias kinspire="ssh kavmag1@durin.dreamhost.com"
-
 # Tmux
 alias tm="tmux a || tmux" # Attaches, or creates new session if not already created
 
