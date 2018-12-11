@@ -16,6 +16,8 @@
 	safecrlf = false
 [push]
 	default = simple
+[pull]
+	rebase = true
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
