@@ -7,13 +7,16 @@
 	ps = push
 	pl = pull
     co = checkout
+    l = log --graph
 [user]
 	email = sarangj@msn.com
 	name = Sarang Joshi
 [core]
-	autocrlf = input
+    autocrlf = input
 	editor = vim
 	safecrlf = false
+	excludesfile = /mnt/c/Users/Sarang.Joshi/.gitignore_global
+	filemode = false
 [push]
 	default = simple
 [pull]
@@ -23,3 +26,10 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[credential]
+	helper = manager
+[difftool "sourcetree"]
+	cmd = '' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true

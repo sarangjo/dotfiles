@@ -52,6 +52,7 @@ alias q++="g++ -Wall -std=c++11 -g -o"
 alias g="git"
 alias gith="cd ~/git" # Git home
 alias gitfr="git fetch upstream && git rebase upstream/master"
+alias gitcc="git checkout -- . && git clean -fd"
 
 # Tmux
 alias tm="tmux a || tmux" # Attaches, or creates new session if not already created

@@ -21,8 +21,8 @@ if [ -f ~/.nixrc ]; then
 fi
 
 # Work aliases
-if [ -f ~/.illumio_aliases ]; then
-    . ~/.illumio_aliases
+if [ -f ~/.illumiorc ]; then
+    . ~/.illumiorc
 fi
 
 # just in case the system does not have vim as the default editor
