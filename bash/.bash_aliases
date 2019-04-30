@@ -4,7 +4,6 @@ alias lmao="exit"
 alias gr="grep -Rni"
 alias ll="ls -l"
 alias la="ls -lA"
-alias find="find . -name"
 
 # Recycle bin deletion
 rb="/tmp/sarangj_recycle"

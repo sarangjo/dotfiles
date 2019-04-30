@@ -1,35 +1,26 @@
 [alias]
-	s = status
-	c = commit -m
-	ac = commit -am
-	a = add -A
-	d = diff
-	ps = push
-	pl = pull
+    s = status
+    c = commit -m
+    ac = commit -am
+    a = add -A
+    d = diff
+    ps = push
+    pl = pull
     co = checkout
-    l = log --graph
 [user]
-	email = sarangj@msn.com
-	name = Sarang Joshi
+    email = sarangj@msn.com
+    name = Sarang Joshi
 [core]
     autocrlf = input
-	editor = vim
-	safecrlf = false
-	excludesfile = /mnt/c/Users/Sarang.Joshi/.gitignore_global
-	filemode = false
+    editor = vim
+    safecrlf = false
+    fileMode = false
 [push]
-	default = simple
+    default = simple
 [pull]
-	rebase = true
+    rebase = true
 [filter "lfs"]
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-[credential]
-	helper = manager
-[difftool "sourcetree"]
-	cmd = '' \"$LOCAL\" \"$REMOTE\"
-[mergetool "sourcetree"]
-	cmd = "'' "
-	trustExitCode = true
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
