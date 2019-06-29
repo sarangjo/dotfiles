@@ -7,10 +7,13 @@ alias sp18="cd ~/OneDrive\ -\ UW\ Office\ 365/Documents/Senior\ Year/sp18"
 alias onedrive="cd ~/OneDrive/Documents"
 
 # WSL-specific
-export DOCKER_HOST=tcp://localhost:2375
+#export DOCKER_HOST=tcp://localhost:2375
 export DISPLAY=:0
 export GOPATH=$HOME/go
 export PATH=$PATH:~/.yarn/bin:/usr/local/go/bin:$GOPATH/bin
+
+alias vagrant="vagrant.exe"
+export VAGRANT_DEFAULT_PROVIDER="virtualbox"
 
 function atom() {
     powershell.exe start atom -ArgumentList $1

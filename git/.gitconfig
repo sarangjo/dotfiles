@@ -7,6 +7,8 @@
     ps = push
     pl = pull
     co = checkout
+    l = log --graph
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [user]
     email = sarangj@msn.com
     name = Sarang Joshi

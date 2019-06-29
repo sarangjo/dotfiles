@@ -36,6 +36,7 @@ parse_git_branch() {
 # \u is user, \h is host, \W is working directory
 export PS1="[\u@\h \W]\$(parse_git_branch) $ "
 
-export SKIP_AUTH=1
+export DISPLAY=localhost:0.0
 
+# n
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).

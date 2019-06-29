@@ -12,6 +12,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-fugitive'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'airblade/vim-gitgutter'
+"Plugin 'w0rp/ale'
 "Plugin 'tpope/vim-sleuth'
 "Plugin 'jceb/vim-orgmode'
 "Plugin 'rakr/vim-one'
@@ -19,11 +21,11 @@ Plugin 'mileszs/ack.vim'
 "Plugin 'FredKSchott/CoVim'
 
 " Language support
-Plugin 'rust-lang/rust.vim'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'c.vim'
 Plugin 'PProvost/vim-ps1'
 Plugin 'leafgarland/typescript-vim'
+"Plugin 'rust-lang/rust.vim'
 "Plugin 'python-mode/python-mode'
 call vundle#end()
 filetype plugin indent on
@@ -63,7 +65,7 @@ nnoremap gh :MBEbp<CR>
 " END PLUGINS "
 
 " Line numbers
-set number
+set number relativenumber
 
 " Default to 4 spaces, expanded
 " shiftwidth - number of spaces to insert for (auto)indent, such as for >>/<<
