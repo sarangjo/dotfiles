@@ -1,4 +1,5 @@
 # User specific aliases and functions
+# These aliases are cross-platform and should work on all bash-compatible platforms
 alias cleantemp="rm *~ .*.swp"
 alias lmao="exit"
 alias gr="grep -Rni"
@@ -34,18 +35,15 @@ function attu {
     fi
 }
 
+# cd + ls
 function cl {
-    if [ "$#" -eq 1 ]; then
-        cd $1 && ls
-    else
-        echo "Provide a directory to navigate to."
-    fi
+    cd "$@" && ls
 }
 
 # Compiling
-alias qcc="gcc -Wall -std=gnu99 -g -o"
+alias qcc="gcc -Wall -std=gnu99 -g"
 alias vg="valgrind --leak-check=full"
-alias q++="g++ -Wall -std=c++11 -g -o"
+alias q++="g++ -Wall -std=c++11 -g"
 
 # Git
 alias g="git"
@@ -57,4 +55,6 @@ alias gitcc="git checkout -- . && git clean -fd"
 alias tm="tmux a || tmux" # Attaches, or creates new session if not already created
 
 # PHP
-alias phps='function _phps(){ php -S localhost:$1; };_phps'
+function phps {
+    php -S "localhost:$1"
+}

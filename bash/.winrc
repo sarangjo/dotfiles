@@ -1,26 +1,3 @@
-# TODO - should the aliases that are specific to WSL or MSYS2 be separated?
-
-# These should work on WSL or MSYS2
-alias au17="cd ~/OneDrive\ -\ UW\ Office\ 365/Documents/Senior\ Year/au17"
-alias wi18="cd ~/OneDrive\ -\ UW\ Office\ 365/Documents/Senior\ Year/wi18"
-alias sp18="cd ~/OneDrive\ -\ UW\ Office\ 365/Documents/Senior\ Year/sp18"
+# Windows stuff, independent of WSL or MSYS2
 alias onedrive="cd ~/OneDrive/Documents"
 
-# WSL-specific
-#export DOCKER_HOST=tcp://localhost:2375
-export DISPLAY=:0
-export GOPATH=$HOME/go
-export PATH=$PATH:~/.yarn/bin:/usr/local/go/bin:$GOPATH/bin
-
-alias vagrant="vagrant.exe"
-export VAGRANT_DEFAULT_PROVIDER="virtualbox"
-
-function atom() {
-    powershell.exe start atom -ArgumentList $1
-}
-
-# MSYS2-specific
-export PATH=$PATH:/pkgs/winpty/bin
-
-alias wpython="winpty /c/Python36-32/python"
-alias wpython2="winpty /c/Python27/python"
