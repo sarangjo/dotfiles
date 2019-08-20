@@ -13,7 +13,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'w0rp/ale'
+"Plugin 'w0rp/ale'
 "Plugin 'tpope/vim-sleuth'
 "Plugin 'jceb/vim-orgmode'
 "Plugin 'rakr/vim-one'
@@ -106,3 +106,10 @@ au FileType c setl sw=2 sts=2 ts=2
 au FileType cpp setl sw=2 sts=2 ts=2
 au FileType h setl sw=2 sts=2 ts=2
 au FileType php set filetype=html syntax=php
+
+" Highlighting for GitGutter
+"White sign, colored background colorscheme
+"highlight SignColumn term=bold ctermbg=234 ctermfg=8
+"highlight GitGutterDelete term=bold ctermfg=88 ctermbg=88
+"highlight GitGutterAdd term=bold ctermfg=189 ctermbg=22
+"highlight GitGutterChange term=bold ctermfg=189 ctermbg=100

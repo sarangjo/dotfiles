@@ -44,6 +44,8 @@ function cl {
 alias qcc="gcc -Wall -std=gnu99 -g"
 alias vg="valgrind --leak-check=full"
 alias q++="g++ -Wall -std=c++11 -g"
+alias gccver="g++ -dM -E -x c++ /dev/null | grep -F __cplusplus"
+alias gccinc="echo | gcc -E -Wp,-v -"
 
 # Git
 alias g="git"
