@@ -16,12 +16,13 @@ if [ -f ~/.winrc ]; then
 fi
 
 # WSL-specific global definitions
-if [ -f ~/.wslrc ]; then
+OS=$(uname)
+if [[ -f ~/.wslrc && $OS == "Linux" ]]; then
     . ~/.wslrc
 fi
 
 # MSYS2-specific global definitions
-if [ -f ~/.msys2rc ] & [ $MSYSTEM ]; then
+if [[ -f ~/.msys2rc && -n $MSYSTEM ]]; then
     . ~/.msys2rc
 fi
 
