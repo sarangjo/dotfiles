@@ -113,3 +113,6 @@ au FileType php set filetype=html syntax=php
 "highlight GitGutterDelete term=bold ctermfg=88 ctermbg=88
 "highlight GitGutterAdd term=bold ctermfg=189 ctermbg=22
 "highlight GitGutterChange term=bold ctermfg=189 ctermbg=100
+
+" Bell sounds
+set belloff=all
