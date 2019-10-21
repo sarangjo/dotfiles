@@ -116,3 +116,6 @@ au FileType php set filetype=html syntax=php
 
 " Bell sounds
 set belloff=all
+
+" 100-character lines
+set colorcolumn=100
