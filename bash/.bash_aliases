@@ -60,3 +60,6 @@ alias tm="tmux a || tmux" # Attaches, or creates new session if not already crea
 function phps {
     php -S "localhost:$1"
 }
+
+# Kinspire
+alias kindb="mysql -h mysql.kinspire.org -u kinspire -D kinspireorg -p"
