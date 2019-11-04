@@ -102,9 +102,6 @@ color desert
 " Filetypes
 " These are au[tocommands] that are run based on the filetypes
 au FileType javascript setl sw=2 sts=2 ts=2
-au FileType c setl sw=2 sts=2 ts=2
-au FileType cpp setl sw=2 sts=2 ts=2
-au FileType h setl sw=2 sts=2 ts=2
 au FileType php set filetype=html syntax=php
 
 " Highlighting for GitGutter
