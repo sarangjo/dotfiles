@@ -1,1 +1,7 @@
-AllowSetSelection=true
+BoldAsFont=-1
+Font=SF Mono
+FontHeight=14
+CursorType=block
+BellType=0
+AllowSetSelection=yes
+CursorBlinks=no
