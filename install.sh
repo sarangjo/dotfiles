@@ -2,9 +2,10 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 
-cp "$DIR"/bash/.* ~ &> /dev/null
-cp "$DIR"/vim/.* ~ &> /dev/null
-cp "$DIR"/tmux/.* ~ &> /dev/null
-cp "$DIR"/git/.* ~ &> /dev/null
+SUBDIRS=(bash vim tmux git misc)
+
+for i in ${SUBDIRS[@]}; do
+    cp "$DIR"/"$i"/.* ~ &> /dev/null
+done
 
 exit 0
