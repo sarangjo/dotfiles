@@ -3,6 +3,7 @@
 export DISPLAY=localhost:0.0
 export GOPATH=$HOME/go
 export VAGRANT_DEFAULT_PROVIDER="virtualbox"
+export PATH=$PATH:~/.yarn/bin:/usr/local/go/bin:$GOPATH/bin
 
 alias psh="powershell.exe"
 
