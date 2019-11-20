@@ -63,3 +63,17 @@ function phps {
 
 # Kinspire
 alias kindb="mysql -h mysql.kinspire.org -u kinspire -D kinspireorg -p"
+
+# Misc
+# String rotation for funzies
+function rot {
+    foo=${1^^}
+
+    for ((i = 0; i < ${#foo}; i++ )); do
+        for ((j = 0; j < ${#foo}; j++ )); do
+            let "idx = ( $i + $j ) % ${#foo}"
+            echo -n "${foo:$idx:1} "
+        done
+        echo
+    done
+}
