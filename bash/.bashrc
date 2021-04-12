@@ -16,9 +16,15 @@ if [ -f ~/.winrc ]; then
 fi
 
 # WSL-specific global definitions
-OS=$(uname)
-if [[ -f ~/.wslrc && $OS == "Linux" ]]; then
+KERNEL_RELEASE=$(uname -r)
+if [[ -f ~/.wslrc && $KERNEL_RELEASE =~ .*Microsoft$ ]]; then
     . ~/.wslrc
+fi
+
+# Linux/*nix-specific stuff
+OS=$(uname)
+if [[ -f ~/.nixrc && $OS == Linux ]]; then
+    . ~/.nixrc
 fi
 
 # MSYS2-specific global definitions
@@ -37,10 +43,8 @@ export EDITOR=vim
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
+
 # \e is needed for escape sequence
 # [32m is green, [33m is yellow, [0m is white
 # \u is user, \h is host, \W is working directory
 export PS1="[\u@\h \W]\$(parse_git_branch) $ "
-
-# n
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).

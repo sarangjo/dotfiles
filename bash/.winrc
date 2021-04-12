@@ -1,3 +1,2 @@
 # Windows stuff, independent of WSL or MSYS2
 alias onedrive="cd ~/OneDrive/Documents"
-

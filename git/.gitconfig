@@ -20,6 +20,8 @@
     fileMode = false
 [push]
     default = simple
+[diff]
+    tool = vimdiff
 [filter "lfs"]
     process = git-lfs filter-process
     required = true

@@ -19,3 +19,7 @@ cp ~/.tmux.conf tmux/ &> /dev/null
 
 mkdir -p vim/
 cp ~/.vimrc vim/ &> /dev/null
+
+mkdir -p powershell/
+# Powershell is in a weird place
+cp ~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1 powershell/ &> /dev/null
