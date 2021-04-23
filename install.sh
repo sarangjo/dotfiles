@@ -9,6 +9,6 @@ for i in ${SUBDIRS[@]}; do
 done
 
 # Powershell is in a weird place
-cp powershell/profile.ps1 ~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
+cp powershell/Microsoft.PowerShell_profile.ps1 ~/Documents/WindowsPowerShell/
 
 exit 0

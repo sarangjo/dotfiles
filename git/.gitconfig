@@ -17,7 +17,7 @@
     autocrlf = input
     editor = vim
     safecrlf = false
-    fileMode = false
+    filemode = false
 [push]
     default = simple
 [diff]
