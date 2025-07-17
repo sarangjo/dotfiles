@@ -4,4 +4,3 @@
 export PATH=$PATH:/pkgs/winpty/bin
 alias wpython="winpty /c/Python36-32/python"
 alias wpython2="winpty /c/Python27/python"
-

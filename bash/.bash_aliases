@@ -1,10 +1,9 @@
 # User specific aliases and functions
 # These aliases are cross-platform and should work on all bash-compatible platforms
 alias cleantemp="rm *~ .*.swp"
-alias lmao="exit"
 alias gr="grep -Rni"
 alias ll="ls -l"
-alias la="ls -lA"
+alias la="ls -A"
 
 # Recycle bin deletion
 rb="/tmp/sarangj_recycle"
@@ -49,7 +48,6 @@ alias gccinc="echo | gcc -E -Wp,-v -"
 
 # Git
 alias g="git"
-alias gith="cd ~/git" # Git home
 alias gitfr="git fetch upstream && git rebase upstream/master"
 alias gitcc="git checkout -- . && git clean -fd"
 function gitpub {
