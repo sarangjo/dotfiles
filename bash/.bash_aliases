@@ -53,6 +53,16 @@ alias gitcc="git checkout -- . && git clean -fd"
 function gitpub {
     git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) $@
 }
+function gitreset {
+    if [ "$#" -lt 2 ]; then
+        echo "Usage: gitreset <branch> <file>"
+        return
+    fi
+
+    git reset "$1" -- "$2"
+    git restore "$2"
+    git restore --staged "$2"
+}
 
 # Tmux
 alias tm="tmux a || tmux" # Attaches, or creates new session if not already created
